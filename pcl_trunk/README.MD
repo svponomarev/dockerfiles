@@ -37,10 +37,11 @@ $ docker run --rm -it svponomarev/pcl_trunk /bin/bash
 ```
 ### Compile:
 Use cmake as described [here][4].
-### Testing PCL library
+
+## Testing PCL library
 One can use simple projects from [PCL Tutorial][5] to test builded image.
 
-A. Without GUI ([pcd_write][6] project):
+### A. Without GUI ([pcd_write][6] project):
 
 Copy pcl_trunk/test_projects/pcd_write folder to <YOUR_DIRECTORY>
 ```sh
@@ -62,7 +63,7 @@ Saved 5 data points to test_pcd.pcd.
   -0.4607 -0.277468 -0.916762
 ```
 
-B. With GUI([cloud_viewer][7] project):
+### B. With GUI ([cloud_viewer][7] project):
 
 In order to use graphical interface the following steps should be taken:
 1. Install openGL drivers for your graphics card, e.g. for NVIDIA cards append to the end of the Dockerfile:
