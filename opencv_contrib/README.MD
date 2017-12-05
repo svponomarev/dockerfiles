@@ -1,8 +1,9 @@
 # opencv_contrib
 
-This repository contains [OpenCV 3.3.1][1] image for Docker based on Ubuntu 16.04.
+This repository contains [OpenCV 3.3.1][1] dockerfile based on Ubuntu 16.04.
 OpenCV 3.3.1 built with opencv_contrib module and Python bindings. The available Python versions are 2.7 and 3.5.
 Built based on [Install OpenCV3 on Ubuntu][2] guide, thanks to [Vaibhaw Singh Chandel][3].
+
 Builded image can be found at [Docker Hub][4].
 
 ## Usage
