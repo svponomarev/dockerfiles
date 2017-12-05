@@ -6,11 +6,11 @@ Built based on [Install OpenCV3 on Ubuntu][2] guide, thanks to [Vaibhaw Singh Ch
 Builded image can be found at [Docker Hub][4].
 
 ## Usage
-### Build image from dockerfile
+### Build image from dockerfile:
 ```sh
 $ docker build -t svponomarev/opencv_contrib .
 ```
-### Download image from Docker Hub
+### Download image from Docker Hub:
 ```sh
 $ docker pull svponomarev/opencv_contrib
 ```
