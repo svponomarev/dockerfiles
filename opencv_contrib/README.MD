@@ -3,9 +3,17 @@
 This repository contains [OpenCV 3.3.1][1] image for Docker based on Ubuntu 16.04.
 OpenCV 3.3.1 built with opencv_contrib module and Python bindings. The available Python versions are 2.7 and 3.5.
 Built based on [Install OpenCV3 on Ubuntu][2] guide, thanks to [Vaibhaw Singh Chandel][3].
-Automated build image can be found at [Docker Hub][4].
+Builded image can be found at [Docker Hub][4].
 
 ## Usage
+### Build image from dockerfile
+```sh
+$ docker build -t svponomarev/opencv_contrib .
+```
+### Download image from Docker Hub
+```sh
+$ docker pull svponomarev/opencv_contrib
+```
 ### Create a new container:
 ```sh
 $ docker run --name <CONTAINER_NAME> -it svponomarev/opencv_contrib /bin/bash
@@ -85,5 +93,5 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nvidia-384
 [1]: https://opencv.org/
 [2]: https://www.learnopencv.com/install-opencv3-on-ubuntu/
 [3]: http://home.iitk.ac.in/~vaibhaw/
-[4]: https://hub.docker.com/r/svponomarev/
+[4]: https://hub.docker.com/r/svponomarev/opencv_contrib/
 [5]: http://wiki.ros.org/docker/Tutorials/GUI
