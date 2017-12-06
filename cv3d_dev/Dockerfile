@@ -122,6 +122,10 @@ RUN apt-get update && apt-get install -y codeblocks codeblocks-contrib libcanber
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nvidia-384
 
-# 14. Clean temporary files
+# 14. Install additional OpenGL libraries
+RUN apt-get install -y libglfw3-dev libglew-dev
+RUN ldconfig
+
+# 15. Clean temporary files
 RUN apt-get autoclean && apt-get clean && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
