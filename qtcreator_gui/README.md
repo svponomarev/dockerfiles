@@ -3,7 +3,7 @@ This repository contains [Qt Creator][1] dockerfile based on Ubuntu 16.04.
 Build is based on image [zachdeiber/qt-creator][2], thanks to [Zach Deibert][3].
 Main difference: install nvidia drivers to fix opengl errors, base image on ubuntu instead of debian
 
-Builded image can be found at [Docker Hub][4].
+Built image can be found at [Docker Hub][4].
 
 ## Usage
 ### Allow docker to access control to X server on your host:
@@ -11,6 +11,14 @@ Builded image can be found at [Docker Hub][4].
 $ xhost +local:docker
 ```
 Warning, this is not the most safe way, other methods are described [here][5].
+### Build image from dockerfile:
+```sh
+$ docker build -t svponomarev/qtcreator_gui .
+```
+### Download image from Docker Hub:
+```sh
+$ docker pull svponomarev/qtcreator_gui
+```
 ### Create a new container:
 ```sh
 $ docker run --name <CONTAINER_NAME> --device /dev/nvidia0 --device /dev/nvidiactl -e DISPLAY=$DISPLAY -v /tmp:/tmp svponomarev/qtcreator_gui qtcreator

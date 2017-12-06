@@ -2,7 +2,7 @@
 
 This repository contains [Point Cloud Library, PCL 1.8.1][1] unstable version (pcl-trunk) dockerfile. Built under Ubuntu 16.04, all credit for dockerfile goes to [Innerspace][2].
 
-Builded image can be found at [Docker Hub][3].
+Built image can be found at [Docker Hub][3].
 
 ## Usage
 ### Build image from dockerfile:
