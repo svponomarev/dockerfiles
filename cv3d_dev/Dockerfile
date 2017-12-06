@@ -123,7 +123,7 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nvidia-384
 
 # 14. Install additional OpenGL libraries
-RUN apt-get install -y libglfw3-dev libglew-dev
+RUN apt-get install -y libglfw3-dev libglew-dev libglm-dev
 RUN ldconfig
 
 # 15. Clean temporary files
