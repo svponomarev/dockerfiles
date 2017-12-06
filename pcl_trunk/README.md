@@ -97,6 +97,11 @@ $ docker run --name <CONTAINER_NAME> -it --rm --device /dev/nvidia0 --device /de
 ```
 If everything is okay, PCL viewer should pop out on the screen without any warnings.
 
+## Authors
+
+* **Svyatoslav Ponomarev** - sv.v.ponomarev@gmail.com
+
+
 [1]: http://pointclouds.org/
 [2]: https://github.com/innerspacehq/docker-pcl
 [3]: https://hub.docker.com/r/svponomarev/pcl_trunk/
