@@ -15,6 +15,43 @@ Built image can be found at [Docker Hub][9].
 ## Acknowledgements
 OpenCV installation is based on [Install OpenCV3 on Ubuntu][10] guide, thanks to [Vaibhaw Singh Chandel][11]. PCL installation is based on [blog post][12], for dockerfile instructions thanks to Matt MacGillivray and [Innerspace][13]. Code::Blocks and Qt Creator installations are based on [Zach Deibert][14] dockerfiles with minor fixes.
 
+## Installation path
+### Headers:
+OpenCV:
+```sh
+/usr/local/include/opencv2
+```
+PCL:
+```sh
+/usr/local/include/pcl-1.8
+/usr/include/eigen3
+/usr/include/vtk-5.10
+/usr/include/boost
+```
+OpenGL:
+```sh
+/usr/include/GL
+/usr/include/GLFW
+/usr/include/glm
+```
+### Libraries:
+OpenCV:
+```sh
+/usr/local/lib/libopencv*
+```
+PCL:
+```sh
+/usr/local/lib/libpcl*
+/usr/lib/libvtk*
+/usr/lib/x86_64-linux-gnu/libboost*
+```
+OpenGL
+```sh
+/usr/lib/x86_64-linux-gnu/libGL*
+/usr/lib/x86_64-linux-gnu/libglfw*
+/usr/lib/x86_64-linux-gnu/libGLEW*
+```
+
 ## Usage
 ### Allow docker to access control to X server on your host:
 ```sh

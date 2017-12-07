@@ -6,6 +6,16 @@ Built based on [Install OpenCV3 on Ubuntu][2] guide, thanks to [Vaibhaw Singh Ch
 
 Built image can be found at [Docker Hub][4].
 
+## Installation path
+### Headers:
+```sh
+/usr/local/include/opencv2
+```
+### Libraries:
+```sh
+/usr/local/lib/libopencv*
+```
+
 ## Usage
 ### Build image from dockerfile:
 ```sh

@@ -4,6 +4,21 @@ This repository contains [Point Cloud Library, PCL 1.8.1][1] unstable version (p
 
 Built image can be found at [Docker Hub][3].
 
+## Installation path
+### Headers:
+```sh
+/usr/local/include/pcl-1.8
+/usr/include/eigen3
+/usr/include/vtk-5.10
+/usr/include/boost
+```
+### Libraries:
+```sh
+/usr/local/lib/libpcl*
+/usr/lib/libvtk*
+/usr/lib/x86_64-linux-gnu/libboost*
+```
+
 ## Usage
 ### Build image from dockerfile:
 ```sh
