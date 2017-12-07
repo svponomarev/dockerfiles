@@ -49,6 +49,8 @@ $ docker start <CONTAINER_NAME>
 ```sh
 $ docker run --rm --device /dev/nvidia0 --device /dev/nvidiactl -v /tmp:/tmp -v <YOUR_DIRECTORY>:/<DOCKER_DIRECTORY> -e DISPLAY=$DISPLAY svponomarev/cv3d_dev codeblocks
 ```
+## Issues
+If Code::Blocks hangs while loading projects, try to disable code completion in Plugins->Manage Plugins, as it stated [here][16].
 
 ## Authors
 
@@ -69,3 +71,4 @@ $ docker run --rm --device /dev/nvidia0 --device /dev/nvidiactl -v /tmp:/tmp -v 
 [13]: https://github.com/innerspacehq/docker-pcl
 [14]: https://github.com/zachdeibert/docker-images/
 [15]: http://wiki.ros.org/docker/Tutorials/GUI
+[16]: http://sauravag.com/2016/07/fix-codeblocks-freezing-in-ubuntu/

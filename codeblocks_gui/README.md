@@ -36,6 +36,9 @@ $ docker start <CONTAINER_NAME>
 $ docker run --rm -e DISPLAY=$DISPLAY -v /tmp:/tmp svponomarev/codeblocks_gui codeblocks
 ```
 
+## Issues
+If Code::Blocks hangs while loading projects, try to disable code completion in Plugins->Manage Plugins, as it stated [here][6].
+
 ## Authors
 
 * **Svyatoslav Ponomarev** - sv.v.ponomarev@gmail.com
@@ -45,3 +48,4 @@ $ docker run --rm -e DISPLAY=$DISPLAY -v /tmp:/tmp svponomarev/codeblocks_gui co
 [3]: https://github.com/zachdeibert/docker-images/tree/master/IDEs/CodeBlocks
 [4]: https://hub.docker.com/r/svponomarev/codeblocks_gui/
 [5]: http://wiki.ros.org/docker/Tutorials/GUI
+[6]: http://sauravag.com/2016/07/fix-codeblocks-freezing-in-ubuntu/
