@@ -99,9 +99,8 @@ RUN git clone https://github.com/PointCloudLibrary/pcl.git ~/pcl
 
 # 10. Build & install PCL
 RUN mkdir ~/pcl/build
-RUN cd ~/pcl/build && cmake -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr \
-           -DBUILD_GPU=ON -DBUILD_apps=ON -DBUILD_examples=ON \
--DCMAKE_INSTALL_PREFIX=/usr ~/pcl
+RUN cd ~/pcl/build && cmake -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr/local \
+           -DBUILD_GPU=ON -DBUILD_apps=ON -DBUILD_examples=ON  ~/pcl
 RUN cd ~/pcl/build && make -j4 # substitute 4 by output of nproc
 RUN cd ~/pcl/build && make -j4 install # substitute 4 by output of nproc
 RUN ldconfig
